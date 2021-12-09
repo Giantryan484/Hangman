@@ -151,7 +151,7 @@ def hangman():
 hangman()
 
 while True:
-    if input('Would you like to play again? (y/n): ').upper() == 'Y':
+    if input('\n Would you like to play again? (y/n): ').upper() == 'Y':
         hangman()
         print()
     else:
