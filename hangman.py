@@ -143,10 +143,12 @@ def hangman():
       win = 2
   if win == 1:
     print("Congratulations, you win!")
+    print()
   else:
     print("Too bad, you lose!")
     print()
     print("The word was: " + word)
+    print()
     
 hangman()
 
