@@ -3,9 +3,9 @@ import random
 '''words = ['PERSON', 'PICTURE', 'PEN', 'PENCIL', 'PARK', 'PARTY', 'OIL', 'PAINTER', 'NEST', 'NEWS', 'MOUNTAIN', 'MOVIE', 'MORNING', 'NAME', 'MOBILE', 'MONEY', 'MARKET', 'MIRROR', 'LIFE', 'MAGAZINE', 'LAND', 'LAW', 'LEAVES', 'LETTER', 'JEWELRY', 'JOB', 'INDUSTRY', 'ISLAND', 'HOSPITAL', 'IDEA', 'YESTERDAY', 'HILL', 'YEAR', 'HEALTH', 'WOMEN', 'GAS', 'WOOD', 'GROUP', 'GARDEN', 'WEEK', 'WATER', 'GAME', 'VIEW', 'FUTURE', 'TRAIN', 'FOOD', 'TRADE', 'FLOWERS', 'TRACTOR', 'FLOOR', 'JAZZ', 'ZEPHYR', 'FIZZ', 'BUZZ', 'BUS', 'QUIZ']
 '''
 
-dick = {'pequeño':'small','grande':'big','quiere ser':'wants to be', 'también':'also','inteligente':'intelligent','puede contar':'is able to count','al revés':'in reverse','atlético':'athletic','gimnasta':'gymnast','poético':'poetic','puede inventar':'can invent','babuino':'baboon','tan pequeña como':'as small as','quiere tener':'wants to have','trompa':'trunk','puede levantar':'is able to lift','levanta':'lifts','piernas':'legs','orejas':'ears','todavía':'still','pobre':'poor','por accidente':'by accident','roca':'rock','salta':'jumps','mueve':'moves','lo atrapa':'traps him','grita':'shouts','hoyo':'hole','salvar':'to save','salva':'saves','escapa':'escapes','puede escapar':'is able to escape','corazón':'heart','está contento':'is happy','día':'day','porque':'because','héroe':'hero','necesita mover':'needs to move'}
+dict = {'pequeño':'small','grande':'big','quiere ser':'wants to be', 'también':'also','inteligente':'intelligent','puede contar':'is able to count','al revés':'in reverse','atlético':'athletic','gimnasta':'gymnast','poético':'poetic','puede inventar':'can invent','babuino':'baboon','tan pequeña como':'as small as','quiere tener':'wants to have','trompa':'trunk','puede levantar':'is able to lift','levanta':'lifts','piernas':'legs','orejas':'ears','todavía':'still','pobre':'poor','por accidente':'by accident','roca':'rock','salta':'jumps','mueve':'moves','lo atrapa':'traps him','grita':'shouts','hoyo':'hole','salvar':'to save','salva':'saves','escapa':'escapes','puede escapar':'is able to escape','corazón':'heart','está contento':'is happy','día':'day','porque':'because','héroe':'hero','necesita mover':'needs to move'}
 
-words = list(dick.keys())
+words = list(dict.keys())
 
 def validguess(guessed):
   #checks everything to make sure the input is valid, and returns that input as a guess
@@ -34,7 +34,7 @@ def print_hangman(word, guessed, de):
       string += '_ '
     
     
-  defi = dick[word]
+  defi = dict[word]
     
   word = word.replace(' ', '')
   wrong = 0
